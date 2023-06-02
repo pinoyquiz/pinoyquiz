@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GENERAL EDUCATION (LET)</title>
+    <link rel="stylesheet" href="quizapp2.css">
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="container">
+        <div id="game" class="justifiy-center flex-column">
+            <div id="hud">
+                <div class="hud-item">
+                    <button onclick="showMe()" class="donate">Press me!</button>
+                    <div class="donate2" id="donateMe">1 piso = 1 prayer</div>   
+                    <p id="progressText" class="hud-prefix">
+                        Question
+                    </p>
+                    <div id="progressBar">
+                        <div id="progressBarFull"></div>
+                    </div>
+                </div>
+                <div class="hud-item">
+                    <p class="hud-prefix">
+                        Score
+                    </p>
+                    <h1 class="hud-main-tex" id="score">
+                        0
+                    </h1>
+                </div>
+            </div>
+            <h2 id="question">What is the answer of this?</h2>
+            <div class="choice-container">
+                <p class="choice-prefix"></p>
+                <p class="choice-text" data-number="1">Choice 1</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix"></p>
+                <p class="choice-text" data-number="2">Choice 2</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix"></p>
+                <p class="choice-text" data-number="3">Choice 3</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix"></p>
+                <p class="choice-text" data-number="4">Choice 4</p>
+            </div>
+        </div>
+
+    </div>
+    
+
+
+    <script src="game.js"></script>
+</body>
+</html>
